@@ -2,7 +2,7 @@ import styles from "./Title.module.css";
 import Typography from "../Typography/Typography";
 function Title() {
   return (
-    <div className={styles.titleContainer}> <Typography fontSize={28} bold>To do List</Typography> </div>
+    <div className={styles.titleContainer}> <Typography fontSize={30} bold>To do List</Typography> </div>
   )
 }
 
