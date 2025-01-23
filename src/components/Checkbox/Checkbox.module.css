@@ -1,8 +1,8 @@
 .checkbox,
 .active {
-  width: 36px;
-  height: 35px;
-  border: 2px solid #599704;
+  width: 25px;
+  height: 25px;
+  border: 1px solid #000000;
   position: relative;
   display: flex;
   justify-content: center;
@@ -11,7 +11,7 @@
 }
 
 .icon {
-  width: 20px;
+  width: 25px;
 }
 
 .checkbox input {

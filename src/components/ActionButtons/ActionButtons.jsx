@@ -1,8 +1,10 @@
-import React from 'react'
+import styles from "./ActionButtons.module.css"
 
-function ActionButtons() {
+function ActionButtons({handleClick, icon}) {
   return (
-    <div>ActionButtons</div>
+    <div className={styles.actionButtons} onClick={() => handleClick()}>
+        <img src={icon} alt="icon" />
+    </div>
   )
 }
 

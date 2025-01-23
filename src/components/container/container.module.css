@@ -1,5 +1,5 @@
 .container{
-    background: linear-gradient(180deg, rgba(15, 57, 197, 0.63) 0%, #e5ebf0 69.27%);
+    background: linear-gradient(180deg, rgba(115, 147, 255, 0.63) 0%, #e5ebf0 69.27%);
     box-shadow: 8px 13px 19px -3px rgba(0,0,0, 0.33);
     border-radius: 39px;
     width: 70%;
@@ -8,4 +8,12 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.flexContainer{
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 18px;  
 }
