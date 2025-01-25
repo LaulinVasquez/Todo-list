@@ -1,7 +1,12 @@
-import { Container, Title, Typography } from "./components";
-import ProgressBar from "./components/ProgressBar/ProgressBar";
-import TodoList from "./components/TodoList/TodoList";
-import Card from "./components/Card/Card";
+import {
+  Container,
+  Title,
+  Typography,
+  Card,
+  TodoList,
+  Form,
+  ProgressBar,
+} from "./components";
 
 function App() {
   return (
@@ -11,14 +16,17 @@ function App() {
         List of Task
       </Typography>
       {/* Create another container that a uses flex row to create spaces for the progress container */}
-      <Container flex >
+      <Container flex>
         <TodoList />
-        <Card col>
-          <Typography fontSize={20} bold>
-            Progress:
-          </Typography>
-          <ProgressBar progress={"60%"}/>
-        </Card>
+        <Container flexcol>
+          <Card col>
+            <Typography fontSize={20} bold>
+              Progress:
+            </Typography>
+            <ProgressBar progress={"60%"} />
+          </Card>
+          <Form />
+        </Container>
       </Container>
     </Container>
   );
