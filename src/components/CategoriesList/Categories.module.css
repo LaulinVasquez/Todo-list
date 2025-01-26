@@ -1,0 +1,28 @@
+.list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 51px;
+    gap: 30px;
+    color: black;
+}
+
+.list div{
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+}
+
+.list div:hover{
+    transform: translateY(3px);
+}
+.list p { 
+    background-clip: text;
+    text-transform: capitalize;
+    font-size: 20px;
+}
+.list img{
+    width: 50px;
+}

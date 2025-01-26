@@ -6,6 +6,7 @@ import {
   TodoList,
   Form,
   ProgressBar,
+  CategoriesList
 } from "./components";
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
           <Form />
         </Container>
       </Container>
+      <CategoriesList/>
     </Container>
   );
 }
