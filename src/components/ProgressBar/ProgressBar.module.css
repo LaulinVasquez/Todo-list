@@ -21,4 +21,5 @@
     width: 60%;
     height: 100%;
     background: #5997D5;
+    transition: all .4s ease-in-out;
 }

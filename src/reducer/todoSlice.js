@@ -2,6 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
   todos: [{ id: 1, name: "Do the dishes", category: "cleaning", done: false }],
+  category: "cleaning",
 };
 
 export const todoSlice = createSlice({
@@ -14,16 +15,18 @@ export const todoSlice = createSlice({
     },
     // this allow to remove or addd from the to-do list
     updateTodo: (state, action) => {
-      state.todos =  state.todo.filter((todo) => todo.id !==action.payload.id);
+      state.todos =  state.todos.filter((todo) => todo.id !==action.payload.id);
       state.todos = [...state.todos, action.payload];
     },
     addTodo: (state, action) => {
       state.todos = [...state.todos, action.payload];
     },
-    
+    changeCategory: (state, action) =>{
+        state.category = action.payload;
+    }
   },
 });
 
-export const { deleteTodo, updateTodo, addTodo } = todoSlice.actions;
+export const { deleteTodo, updateTodo, addTodo, changeCategory } = todoSlice.actions;
 
 export default todoSlice.reducer;

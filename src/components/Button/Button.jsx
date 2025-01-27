@@ -1,11 +1,7 @@
-import styles from "./Button.module.css"
+import styles from "./Button.module.css";
 
-function Button() {
-  return (
-    <button className={styles.button}>
-      Add
-    </button>
-  )
+function Button({ handleAddTodo }) {
+  return <button onClick={()=> handleAddTodo()} className={styles.button}>Add</button>;
 }
 
-export default Button
+export default Button;

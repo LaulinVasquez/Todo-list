@@ -5,6 +5,15 @@
     gap: 12px;
 }
 
+.taskName input{
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    font-weight: 400;
+    outline: none;
+}
+
+
 .actionButtons{
     display:  flex;
     flex-direction: row;

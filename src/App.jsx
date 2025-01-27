@@ -6,18 +6,19 @@ import {
   TodoList,
   Form,
   ProgressBar,
-  CategoriesList
+  CategoriesList,
 } from "./components";
 import { useSelector } from "react-redux";
 
 function App() {
-  const { todos } = useSelector((state) => state.todos)
-  console.log(todos);
+  const { category } = useSelector((state) => state.todos);
+
   return (
     <Container>
       <Title />
       <Typography fontSize={28} bold marginTop={"38px"} marginBottom={"17px"}>
-        List of Task
+        List of <span style={{ textTransform: "capitalize" }}>{category}</span>{" "}
+        Task
       </Typography>
       {/* Create another container that a uses flex row to create spaces for the progress container */}
       <Container flex>
@@ -27,12 +28,12 @@ function App() {
             <Typography fontSize={20} bold>
               Progress:
             </Typography>
-            <ProgressBar progress={"60%"} />
+            <ProgressBar  />
           </Card>
           <Form />
         </Container>
       </Container>
-      <CategoriesList/>
+      <CategoriesList />
     </Container>
   );
 }
