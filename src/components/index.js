@@ -9,3 +9,4 @@ export {default as ProgressBar} from "./ProgressBar/ProgressBar";
 export {default as Form} from "./Form/Form";
 export {default as Button} from "./Button/Button";
 export {default as CategoriesList} from "./CategoriesList/CategoriesList";
+export {default as Background} from "./Background/Background";
