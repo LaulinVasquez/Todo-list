@@ -1,9 +1,0 @@
-.todolist{
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 32.5px;
-    width: 100%;
-}
